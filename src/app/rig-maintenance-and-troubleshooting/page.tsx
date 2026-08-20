@@ -1,12 +1,11 @@
 import type { Metadata } from "next";
 import Image from "next/image";
-import { Wrench, Gauge, Target, Thermometer, Droplet, Flame, ArrowRight, AlertTriangle } from "lucide-react";
+import { Gauge, Target, Thermometer, Droplet, Flame, ArrowRight, AlertTriangle } from "lucide-react";
 import { Section } from "@/components/ui/Section";
 import { Button } from "@/components/ui/Button";
 import { FadeIn } from "@/components/animations/FadeIn";
 import { StaggerChildren, StaggerItem } from "@/components/animations/StaggerChildren";
 import { TechCard } from "@/components/ui/TechCard";
-import { ChecklistItem } from "@/components/ui/ChecklistItem";
 import { FAQAccordion } from "@/components/ui/FAQAccordion";
 import { CaveatCallout } from "@/components/ui/CaveatCallout";
 
@@ -99,7 +98,19 @@ export default function MaintenancePage() {
         <StaggerChildren className="grid grid-cols-1 sm:grid-cols-2 gap-4 max-w-4xl mx-auto">
           {MAINTENANCE_ITEMS.map((item, i) => (
             <StaggerItem key={item.title}>
-              <ChecklistItem number={i + 1} title={item.title} description={item.description} />
+              <div className="flex items-start gap-4 rounded-xl border border-border bg-card p-6 shadow-sm transition-all hover:-translate-y-1 hover:shadow-md">
+                <div className="flex h-9 w-9 shrink-0 items-center justify-center rounded-full bg-primary text-primary-foreground font-heading font-semibold text-sm">
+                  {i + 1}
+                </div>
+                <div>
+                  <h3 className="font-heading text-base font-semibold text-foreground uppercase tracking-wide">
+                    {item.title}
+                  </h3>
+                  <p className="mt-1.5 text-sm leading-relaxed text-muted-foreground normal-case">
+                    {item.description}
+                  </p>
+                </div>
+              </div>
             </StaggerItem>
           ))}
         </StaggerChildren>
