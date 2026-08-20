@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+
+<html class="scroll-smooth" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>SprayFoamRigTech - Premium Industrial Equipment Education</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&amp;family=Oswald:wght@600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                            "primary": "#954105",
+                            "inverse-surface": "#353027",
+                            "tertiary-container": "#5b7b52",
+                            "surface-bright": "#fff8f3",
+                            "on-primary-fixed-variant": "#783100",
+                            "tertiary-fixed": "#c9edbb",
+                            "secondary-fixed-dim": "#e5c362",
+                            "on-secondary-fixed": "#241a00",
+                            "tertiary-fixed-dim": "#add0a0",
+                            "surface-container-high": "#f1e7d9",
+                            "primary-fixed-dim": "#ffb691",
+                            "secondary-container": "#fdda76",
+                            "inverse-on-surface": "#faefe2",
+                            "on-secondary": "#ffffff",
+                            "on-tertiary-container": "#edffe2",
+                            "on-primary-container": "#fff7f5",
+                            "surface-container": "#f7ecdf",
+                            "surface-container-highest": "#ece1d4",
+                            "on-surface": "#201b13",
+                            "error-container": "#ffdad6",
+                            "on-surface-variant": "#56433a",
+                            "tertiary": "#44623b",
+                            "surface-container-low": "#fdf2e5",
+                            "on-error": "#ffffff",
+                            "secondary": "#745b00",
+                            "on-primary-fixed": "#341100",
+                            "on-secondary-container": "#775e00",
+                            "primary-container": "#b5581f",
+                            "on-primary": "#ffffff",
+                            "on-tertiary-fixed": "#052103",
+                            "surface-variant": "#ece1d4",
+                            "surface-tint": "#9b450a",
+                            "surface": "#fff8f3",
+                            "inverse-primary": "#ffb691",
+                            "surface-container-lowest": "#ffffff",
+                            "on-tertiary-fixed-variant": "#314e29",
+                            "outline": "#897268",
+                            "primary-fixed": "#ffdbcb",
+                            "on-tertiary": "#ffffff",
+                            "background": "#fff8f3",
+                            "on-secondary-fixed-variant": "#574400",
+                            "secondary-fixed": "#ffe08a",
+                            "on-background": "#201b13",
+                            "on-error-container": "#93000a",
+                            "surface-dim": "#e3d8cc",
+                            "outline-variant": "#dcc1b5",
+                            "error": "#ba1a1a"
+                    },
+                    "borderRadius": {
+                            "DEFAULT": "0.125rem",
+                            "lg": "0.25rem",
+                            "xl": "0.5rem",
+                            "full": "0.75rem"
+                    },
+                    "spacing": {
+                            "gutter": "24px",
+                            "max-width": "1280px",
+                            "margin-mobile": "16px",
+                            "unit": "8px",
+                            "margin-desktop": "64px"
+                    },
+                    "fontFamily": {
+                            "headline-sm": [
+                                    "Oswald"
+                            ],
+                            "body-sm": [
+                                    "Inter"
+                            ],
+                            "headline-md": [
+                                    "Oswald"
+                            ],
+                            "display-lg": [
+                                    "Oswald"
+                            ],
+                            "body-lg": [
+                                    "Inter"
+                            ],
+                            "body-md": [
+                                    "Inter"
+                            ],
+                            "headline-lg-mobile": [
+                                    "Oswald"
+                            ],
+                            "headline-lg": [
+                                    "Oswald"
+                            ],
+                            "label-md": [
+                                    "Inter"
+                            ]
+                    },
+                    "fontSize": {
+                            "headline-sm": [
+                                    "18px",
+                                    {
+                                            "lineHeight": "24px",
+                                            "letterSpacing": "0.05em",
+                                            "fontWeight": "600"
+                                    }
+                            ],
+                            "body-sm": [
+                                    "14px",
+                                    {
+                                            "lineHeight": "20px",
+                                            "fontWeight": "400"
+                                    }
+                            ],
+                            "headline-md": [
+                                    "24px",
+                                    {
+                                            "lineHeight": "32px",
+                                            "letterSpacing": "0.01em",
+                                            "fontWeight": "600"
+                                    }
+                            ],
+                            "display-lg": [
+                                    "64px",
+                                    {
+                                            "lineHeight": "72px",
+                                            "letterSpacing": "0.02em",
+                                            "fontWeight": "700"
+                                    }
+                            ],
+                            "body-lg": [
+                                    "18px",
+                                    {
+                                            "lineHeight": "28px",
+                                            "fontWeight": "400"
+                                    }
+                            ],
+                            "body-md": [
+                                    "16px",
+                                    {
+                                            "lineHeight": "24px",
+                                            "fontWeight": "400"
+                                    }
+                            ],
+                            "headline-lg-mobile": [
+                                    "32px",
+                                    {
+                                            "lineHeight": "36px",
+                                            "fontWeight": "700"
+                                    }
+                            ],
+                            "headline-lg": [
+                                    "40px",
+                                    {
+                                            "lineHeight": "48px",
+                                            "letterSpacing": "0.01em",
+                                            "fontWeight": "700"
+                                    }
+                            ],
+                            "label-md": [
+                                    "12px",
+                                    {
+                                            "lineHeight": "16px",
+                                            "letterSpacing": "0.08em",
+                                            "fontWeight": "600"
+                                    }
+                            ]
+                    }
+            },
+                },
+        }
+    </script>
+<style>
+        body {
+            background-color: #F5F0E6; /* Parchment base */
+            color: #201b13;
+        }
+        
+        .bg-parchment { background-color: #F5F0E6; }
+        .bg-charcoal { background-color: #211C15; color: #fff8f3; }
+        .bg-tan { background-color: #E6D9C0; }
+        .bg-khaki { background-color: #BFA043; }
+        .bg-rust { background-color: #B5581F; }
+        .text-rust { color: #B5581F; }
+        
+        .border-technical { border: 1px solid rgba(36, 31, 23, 0.15); }
+        .shadow-mechanical { box-shadow: 4px 4px 0px 0px rgba(33,28,21,1); }
+        
+        .coiled-hose-bg {
+            background-image: repeating-linear-gradient(
+                90deg,
+                transparent,
+                transparent 23px,
+                rgba(33, 28, 21, 0.05) 23px,
+                rgba(33, 28, 21, 0.05) 24px
+            );
+        }
+        
+        .coiled-hose-border {
+            border-bottom: 1px solid rgba(33, 28, 21, 0.2);
+            background-image: repeating-linear-gradient(
+                45deg,
+                transparent,
+                transparent 5px,
+                rgba(33, 28, 21, 0.1) 5px,
+                rgba(33, 28, 21, 0.1) 6px
+            );
+        }
+
+        .btn-primary {
+            @apply bg-primary-container text-on-primary-container font-headline-sm text-headline-sm px-6 py-3 rounded hover:bg-surface-tint transition-colors shadow-mechanical border border-on-surface;
+        }
+        .btn-secondary {
+            @apply bg-parchment text-on-surface font-headline-sm text-headline-sm px-6 py-3 rounded hover:bg-surface-dim transition-colors border border-outline shadow-[2px_2px_0px_0px_rgba(33,28,21,0.5)];
+        }
+    </style>
+</head>
+<body class="antialiased min-h-screen flex flex-col">
+<!-- TopAppBar -->
+<header class="bg-surface-bright dark:bg-inverse-surface fixed top-0 w-full z-50 border-b border-outline/15 dark:border-outline-variant/15 shadow-[4px_4px_0px_0px_rgba(33,28,21,1)]">
+<div class="flex justify-between items-center h-20 px-gutter max-w-max-width mx-auto">
+<a class="flex items-center gap-3" href="/">
+<img alt="SprayFoamRigTech Logo" class="h-10 w-auto rounded-sm object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBbABlvYChgTHE6iDxdJMnTs9uDj0Tmck9mNLDbkFyxaNNfxUBl0JWO4-kST-hTGEZWqj8-TdOLe0fj5A3TjTI2c_Azlldwo5btUIiy716HiASe-4ftV77SjLbvHt0Q7DO9JgDbrUCbtVPvF737GYuXErDx4Ql9jvnpaQu0C_el7CXreKnxrM3HQi10NwMQs1L8ulFDHuFksdvjETqQ5mAZjYblMT14wOXuwzoDgMFluy6q1JZz3PXrA2tfG64CSAbBytfudZtjV28"/>
+<span class="font-headline-md text-headline-md font-bold text-primary dark:text-primary-fixed-dim tracking-tighter uppercase hidden md:block">SprayFoamRigTech</span>
+</a>
+<nav class="hidden md:flex gap-8">
+<a class="text-on-surface-variant dark:text-surface-variant font-medium hover:text-primary dark:hover:text-primary-fixed-dim transition-colors duration-200" href="#what-is-a-rig">What Is a Rig</a>
+<a class="text-on-surface-variant dark:text-surface-variant font-medium hover:text-primary dark:hover:text-primary-fixed-dim transition-colors duration-200" href="#maintenance">Maintenance</a>
+<a class="text-on-surface-variant dark:text-surface-variant font-medium hover:text-primary dark:hover:text-primary-fixed-dim transition-colors duration-200" href="#why-it-matters">Why It Matters</a>
+<a class="text-on-surface-variant dark:text-surface-variant font-medium hover:text-primary dark:hover:text-primary-fixed-dim transition-colors duration-200" href="#blog">Blog</a>
+</nav>
+<div class="flex items-center gap-4">
+<span class="font-body-md text-body-md font-semibold text-on-surface hidden lg:block">844-967-5247</span>
+<a class="btn-primary active:translate-y-0.5 transition-transform" href="#get-matched">Request Quote</a>
+</div>
+</div>
+</header>
+<main class="flex-grow pt-20">
+<!-- 1. HERO -->
+<section class="relative h-[80vh] min-h-[600px] flex items-center bg-charcoal border-b border-outline/20">
+<div class="absolute inset-0 z-0">
+<div class="bg-cover bg-center w-full h-full opacity-40 mix-blend-overlay" data-alt="A highly detailed, wide-angle shot of a heavy-duty spray foam rig trailer parked in an industrial warehouse. The scene is illuminated by warm, practical work-lights casting long shadows, creating a dramatic, premium industrial aesthetic. The equipment inside the trailer (proportioner, hoses, generator) is visible, gleaming subtly with mechanical precision. Deep blacks, crisp highlights, and a warm amber glow dominate the color palette, emphasizing rugged reliability." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCcfyn4DrxP8shFnGnNzfk4rVstpAfjT0-Q4hhNd0315IEvno8tf4dJCnzIv2Lw7pZx8r9z2rVmZ18a-vGwZgkxmvR4GB95f687svscxYasOWSmyuZ1g80EPV3m0a5KoysJjpq90VFk4xm9bxGCOayW99M3_a4MTBK75oPiZyB6LTWJVHUK_IlZHLG0L3vZrD1cWvch7vbH40AV_rXHnTMnu62nEIyCDysx11zIhD3MK03rTrWWbcQHUVg-fR3QUN0TTB6KMj7au9w')"></div>
+<div class="absolute inset-0 bg-gradient-to-r from-[#211C15] via-[#211C15]/80 to-transparent"></div>
+</div>
+<div class="relative z-10 max-w-max-width mx-auto px-gutter w-full grid grid-cols-1 md:grid-cols-12 gap-gutter">
+<div class="md:col-span-8 flex flex-col gap-6">
+<span class="font-label-md text-label-md text-primary-fixed-dim tracking-widest uppercase flex items-center gap-2">
+<span class="material-symbols-outlined text-primary-fixed-dim text-sm" style="font-variation-settings: 'FILL' 1;">build</span>
+                        Industrial Precision Engineering
+                    </span>
+<h1 class="font-display-lg text-display-lg text-surface-bright uppercase">Everything You Need to Know About Spray Foam Rig Equipment</h1>
+<p class="font-body-lg text-body-lg text-surface-variant/90 max-w-2xl">
+                        Practical, plain-spoken education on the proportioners, hoses, and generators that power your business.
+                    </p>
+<div class="flex flex-col sm:flex-row gap-4 mt-4">
+<a class="btn-primary flex items-center justify-center gap-2" href="#get-matched">
+                            Get Matched with a Well-Equipped Contractor
+                            <span class="material-symbols-outlined text-on-primary-container">arrow_forward</span>
+</a>
+<a class="btn-secondary flex items-center justify-center bg-transparent text-surface-bright border-surface-variant/50 hover:bg-surface-variant/10 shadow-none" href="#basics">
+                            Learn the Basics
+                        </a>
+</div>
+</div>
+</div>
+</section>
+<!-- 2. DEFINITION BAND -->
+<section class="bg-charcoal py-12 border-b-4 border-primary">
+<div class="max-w-max-width mx-auto px-gutter text-center">
+<p class="font-headline-md text-headline-md text-surface-variant/90 max-w-4xl mx-auto uppercase tracking-wide">
+                    "This site covers the real equipment and maintenance behind every spray foam job—the proportioner, the hoses, the gun, and the generator."
+                </p>
+</div>
+</section>
+<!-- 3. EQUIPMENT GRID -->
+<section class="bg-parchment py-margin-desktop coiled-hose-bg" id="basics">
+<div class="max-w-max-width mx-auto px-gutter">
+<div class="mb-12 flex items-center justify-between border-b border-technical pb-4">
+<h2 class="font-headline-lg text-headline-lg text-on-surface uppercase">Rig Equipment, Explained</h2>
+<span class="material-symbols-outlined text-on-surface-variant text-4xl">precision_manufacturing</span>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-gutter">
+<!-- Card 1 -->
+<div class="bg-tan rounded border border-technical shadow-mechanical flex flex-col h-full relative overflow-hidden group">
+<div class="h-2 w-full bg-primary absolute top-0 left-0"></div>
+<div class="p-6 flex flex-col h-full mt-2">
+<div class="coiled-hose-border pb-4 mb-4 flex items-center gap-3">
+<div class="w-10 h-10 rounded-full border-2 border-on-surface flex items-center justify-center bg-parchment">
+<span class="material-symbols-outlined text-on-surface">rv_hookup</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-on-surface uppercase leading-tight">What Is a Spray Foam Rig?</h3>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant flex-grow">
+                                The central hub of a spray foam operation. It houses the critical systems needed to heat, pressurize, and pump chemical components safely to the spray gun.
+                            </p>
+<a class="mt-6 font-label-md text-label-md text-primary uppercase tracking-widest flex items-center gap-1 group-hover:gap-2 transition-all" href="#">
+                                Read Manual <span class="material-symbols-outlined text-sm">arrow_right_alt</span>
+</a>
+</div>
+</div>
+<!-- Card 2 -->
+<div class="bg-tan rounded border border-technical shadow-mechanical flex flex-col h-full relative overflow-hidden group">
+<div class="h-2 w-full bg-tertiary absolute top-0 left-0"></div>
+<div class="p-6 flex flex-col h-full mt-2">
+<div class="coiled-hose-border pb-4 mb-4 flex items-center gap-3">
+<div class="w-10 h-10 rounded-full border-2 border-on-surface flex items-center justify-center bg-parchment">
+<span class="material-symbols-outlined text-on-surface">build_circle</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-on-surface uppercase leading-tight">Rig Maintenance &amp; Troubleshooting</h3>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant flex-grow">
+                                Regular maintenance prevents catastrophic downtime. Learn to identify pressure imbalances, clean the proportioner filters, and flush the hoses effectively.
+                            </p>
+<a class="mt-6 font-label-md text-label-md text-tertiary uppercase tracking-widest flex items-center gap-1 group-hover:gap-2 transition-all" href="#">
+                                View Specs <span class="material-symbols-outlined text-sm">arrow_right_alt</span>
+</a>
+</div>
+</div>
+<!-- Card 3 -->
+<div class="bg-tan rounded border border-technical shadow-mechanical flex flex-col h-full relative overflow-hidden group">
+<div class="h-2 w-full bg-on-surface absolute top-0 left-0"></div>
+<div class="p-6 flex flex-col h-full mt-2">
+<div class="coiled-hose-border pb-4 mb-4 flex items-center gap-3">
+<div class="w-10 h-10 rounded-full border-2 border-on-surface flex items-center justify-center bg-parchment">
+<span class="material-symbols-outlined text-on-surface">verified</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-on-surface uppercase leading-tight">Why Rig Quality Matters</h3>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant flex-grow">
+                                A high-quality rig guarantees consistent temperature and pressure. Subpar equipment leads to off-ratio foam, compromising insulation performance and structural integrity.
+                            </p>
+<a class="mt-6 font-label-md text-label-md text-on-surface uppercase tracking-widest flex items-center gap-1 group-hover:gap-2 transition-all" href="#">
+                                Analyze Data <span class="material-symbols-outlined text-sm">arrow_right_alt</span>
+</a>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- 4. WHY IT MATTERS & 5. COMMON ISSUES -->
+<section class="bg-tan py-margin-desktop border-y border-technical coiled-hose-bg" id="why-it-matters">
+<div class="max-w-max-width mx-auto px-gutter">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-12">
+<!-- Left Col: Why It Matters -->
+<div class="lg:col-span-5 flex flex-col justify-center">
+<span class="font-label-md text-label-md text-primary tracking-widest uppercase mb-2">Technical Analysis</span>
+<h2 class="font-headline-lg text-headline-lg text-on-surface uppercase mb-6">On-Ratio vs Off-Ratio</h2>
+<div class="prose max-w-none font-body-md text-body-md text-on-surface-variant space-y-4">
+<p>
+                                The proportioner is the heart of the rig, responsible for mixing the A-side (ISO) and B-side (Resin) chemicals at exactly a 1:1 ratio. 
+                            </p>
+<p>
+<strong>On-Ratio Foam</strong> expands properly, cures instantly, and provides maximum R-value. It is structurally sound and environmentally safe.
+                            </p>
+<p>
+<strong>Off-Ratio Foam</strong> occurs when pressure or temperature drops on one side. The result is a sticky, shrinking mess that lacks insulating properties and can off-gas harmful odors. Quality equipment is the only defense against off-ratio failure.
+                            </p>
+</div>
+<!-- Dial Gauge Motif -->
+<div class="mt-8 flex items-center gap-6 p-4 border border-technical rounded bg-parchment shadow-mechanical w-fit">
+<div class="relative w-16 h-16 rounded-full border-2 border-on-surface flex items-center justify-center bg-surface-container">
+<div class="absolute w-1 h-8 bg-tertiary origin-bottom transform rotate-45" style="bottom: 50%;"></div>
+<div class="w-3 h-3 rounded-full bg-on-surface z-10"></div>
+</div>
+<div>
+<span class="block font-label-md text-label-md text-tertiary uppercase">Pressure Status</span>
+<span class="block font-headline-md text-headline-md text-on-surface">OPTIMAL ZONE</span>
+</div>
+</div>
+</div>
+<!-- Right Col: Common Issues Grid -->
+<div class="lg:col-span-7">
+<div class="bg-parchment p-8 rounded border border-technical shadow-mechanical">
+<h3 class="font-headline-md text-headline-md text-on-surface uppercase mb-6 border-b border-technical pb-2">Common Equipment Failures</h3>
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+<!-- Issue 1 -->
+<div class="border border-technical p-4 rounded bg-surface-bright flex gap-4 items-start">
+<span class="material-symbols-outlined text-error mt-1" style="font-variation-settings: 'FILL' 1;">warning</span>
+<div>
+<h4 class="font-headline-sm text-headline-sm text-on-surface uppercase">Off-Ratio Foam</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">Imbalance in chemical mix, usually due to pump wear or blockage.</p>
+</div>
+</div>
+<!-- Issue 2 -->
+<div class="border border-technical p-4 rounded bg-surface-bright flex gap-4 items-start">
+<span class="material-symbols-outlined text-primary mt-1" style="font-variation-settings: 'FILL' 1;">thermostat</span>
+<div>
+<h4 class="font-headline-sm text-headline-sm text-on-surface uppercase">Hose Temp Problems</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">Heated hose failure leading to cold chemicals and poor yield.</p>
+</div>
+</div>
+<!-- Issue 3 -->
+<div class="border border-technical p-4 rounded bg-surface-bright flex gap-4 items-start">
+<span class="material-symbols-outlined text-primary mt-1" style="font-variation-settings: 'FILL' 1;">water_drop</span>
+<div>
+<h4 class="font-headline-sm text-headline-sm text-on-surface uppercase">Proportioner Leaks</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">Seal degradation causing chemical weeping at the pump shaft.</p>
+</div>
+</div>
+<!-- Issue 4 -->
+<div class="border border-technical p-4 rounded bg-surface-bright flex gap-4 items-start">
+<span class="material-symbols-outlined text-error mt-1" style="font-variation-settings: 'FILL' 1;">bolt</span>
+<div>
+<h4 class="font-headline-sm text-headline-sm text-on-surface uppercase">Generator Failures</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">Power fluctuations disrupting the entire proportioning system.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Footer -->
+<footer class="bg-inverse-surface dark:bg-surface-container-lowest w-full pt-margin-desktop pb-margin-mobile border-t border-outline/20">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-gutter px-gutter max-w-max-width mx-auto">
+<!-- Logo & Copyright -->
+<div class="flex flex-col gap-4 col-span-1 md:col-span-1">
+<a class="flex items-center gap-2" href="/">
+<img alt="SprayFoamRigTech Logo" class="h-8 w-auto rounded-sm object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBbABlvYChgTHE6iDxdJMnTs9uDj0Tmck9mNLDbkFyxaNNfxUBl0JWO4-kST-hTGEZWqj8-TdOLe0fj5A3TjTI2c_Azlldwo5btUIiy716HiASe-4ftV77SjLbvHt0Q7DO9JgDbrUCbtVPvF737GYuXErDx4Ql9jvnpaQu0C_el7CXreKnxrM3HQi10NwMQs1L8ulFDHuFksdvjETqQ5mAZjYblMT14wOXuwzoDgMFluy6q1JZz3PXrA2tfG64CSAbBytfudZtjV28"/>
+<span class="font-headline-sm text-headline-sm text-surface-bright uppercase">SprayFoamRigTech</span>
+</a>
+<p class="font-body-sm text-body-sm text-surface-variant/70 mt-4">
+                        © 2024 SprayFoamRigTech.<br/>Industrial Precision Engineering.
+                    </p>
+</div>
+<!-- Equipment Links -->
+<div class="flex flex-col gap-3">
+<span class="font-label-md text-label-md text-surface-variant uppercase tracking-widest border-b border-outline/20 pb-1 mb-2">Equipment</span>
+<a class="font-body-sm text-body-sm text-surface-variant/70 hover:text-surface-bright transition-colors" href="#">Technical Specs</a>
+<a class="font-body-sm text-body-sm text-surface-variant/70 hover:text-surface-bright transition-colors" href="#">Safety Protocols</a>
+<a class="font-body-sm text-body-sm text-surface-variant/70 hover:text-surface-bright transition-colors" href="#">Parts Catalog</a>
+</div>
+<!-- Company Links -->
+<div class="flex flex-col gap-3">
+<span class="font-label-md text-label-md text-surface-variant uppercase tracking-widest border-b border-outline/20 pb-1 mb-2">Company</span>
+<a class="font-body-sm text-body-sm text-surface-variant/70 hover:text-surface-bright transition-colors" href="#">About Us</a>
+<a class="font-body-sm text-body-sm text-surface-variant/70 hover:text-surface-bright transition-colors" href="#">Privacy Policy</a>
+<a class="font-body-sm text-body-sm text-surface-variant/70 hover:text-surface-bright transition-colors" href="#">Terms of Service</a>
+</div>
+<!-- Contact Info -->
+<div class="flex flex-col gap-3">
+<span class="font-label-md text-label-md text-surface-variant uppercase tracking-widest border-b border-outline/20 pb-1 mb-2">Contact Operations</span>
+<a class="font-body-sm text-body-sm text-surface-variant/70 hover:text-surface-bright transition-colors flex items-center gap-2" href="tel:8449675247">
+<span class="material-symbols-outlined text-[16px]">call</span> 844-967-5247
+                    </a>
+<a class="font-body-sm text-body-sm text-surface-variant/70 hover:text-surface-bright transition-colors flex items-center gap-2" href="mailto:josh@contractorschoiceagency.com">
+<span class="material-symbols-outlined text-[16px]">mail</span> josh@contractorschoiceagency.com
+                    </a>
+<span class="font-body-sm text-body-sm text-surface-variant/70 flex items-center gap-2">
+<span class="material-symbols-outlined text-[16px]">location_on</span> Chandler AZ
+                    </span>
+</div>
+</div>
+</footer>
+</main>
+</body></html>
