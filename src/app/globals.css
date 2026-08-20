@@ -7,30 +7,40 @@
 
 @layer base {
 :root {
-  --background: 240 10% 4%;          /* #0a0a0f */
-  --foreground: 214 32% 91%;          /* #e2e8f0 */
+  /* SprayFoamRigTech — rust-orange/khaki-gold/pine-green palette (light, corporate, unique) */
+  --background: 40 43% 93%;           /* #F5F0E6 parchment */
+  --foreground: 37 22% 12%;           /* #241F17 brown-black text */
 
-  --card: 222 47% 7%;                 /* #0d1117 */
-  --card-foreground: 214 32% 91%;     /* #e2e8f0 */
+  --card: 40 82% 98%;                 /* #FEFBF5 */
+  --card-foreground: 37 22% 12%;      /* #241F17 */
 
-  --primary: 217 91% 60%;             /* #3b82f6 — replace with brand */
+  --primary: 23 71% 42%;              /* #B5581F rust-orange */
+  --primary-dark: 23 70% 32%;         /* #8A4318 */
   --primary-foreground: 0 0% 100%;    /* #ffffff */
 
-  --secondary: 215 20% 15%;           /* #1e293b */
-  --secondary-foreground: 214 32% 91%;
+  --secondary: 39 43% 83%;            /* #E6D9C0 tan */
+  --secondary-foreground: 37 22% 12%;
 
-  --accent: 190 95% 39%;              /* #06b6d4 — replace with brand */
-  --accent-foreground: 0 0% 100%;
+  --accent: 45 49% 51%;               /* #BFA043 khaki-gold */
+  --accent-dark: 46 57% 35%;          /* #8C7526 */
+  --accent-foreground: 37 22% 12%;
 
-  --muted: 215 20% 15%;               /* #1e293b */
-  --muted-foreground: 215 16% 62%;    /* #94a3b8 */
+  --muted: 39 45% 88%;                /* #EEE4D2 muted-tan */
+  --muted-foreground: 39 16% 42%;     /* #7C7059 */
 
-  --destructive: 0 84% 60%;           /* #ef4444 */
+  --destructive: 15 55% 40%;          /* warm red-brown (rarely used) */
   --destructive-foreground: 0 0% 100%;
 
-  --border: 215 20% 15%;              /* #1e293b */
-  --input: 215 20% 15%;
-  --ring: 217 91% 60%;                /* same as primary */
+  --pine: 107 26% 29%;                /* #3E5C36 pine-green — trust/verified accent */
+  --pine-foreground: 0 0% 100%;
+  --pine-dark: 109 26% 21%;           /* #2C4227 */
+
+  --charcoal: 35 22% 11%;             /* #211C15 dark contrast band */
+  --charcoal-foreground: 40 46% 88%;  /* #EFE6D4 cream text on charcoal */
+
+  --border: 39 44% 76%;               /* #DCC9A6 */
+  --input: 39 44% 76%;
+  --ring: 23 71% 42%;                 /* same as primary */
 
   --radius: 0.75rem;
 }
@@ -92,6 +102,27 @@ h1, h2, h3, h4, h5, h6 {
 }
 ::-webkit-scrollbar-thumb:hover {
   background: hsl(var(--muted-foreground));
+}
+
+/* ===== SECTION BAND TEXTURE (subtle coiled-hose-line wash on tinted bands) ===== */
+
+.band-texture {
+  position: relative;
+}
+.band-texture::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  opacity: 0.05;
+  pointer-events: none;
+  background-image: repeating-radial-gradient(
+    circle at 0 0,
+    transparent 0,
+    transparent 10px,
+    hsl(var(--foreground)) 11px,
+    transparent 12px
+  );
+  background-size: 24px 24px;
 }
 
 /* ===== TOUCH TARGETS (WCAG 2.5.5 / 2.5.8) ===== */
