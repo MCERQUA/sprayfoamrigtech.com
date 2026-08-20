@@ -1,14 +1,15 @@
 import type { NextConfig } from "next";
+import createMDX from "@next/mdx";
 
 const nextConfig: NextConfig = {
-  // Required for JamBot canvas iframe embedding (cross-origin dev server)
-  allowedDevOrigins: ["*.jam-bot.com"],
+  output: "export",
   images: {
-    remotePatterns: [
-      // Add client's image CDN or CMS domain here
-      // { protocol: "https", hostname: "images.unsplash.com" },
-    ],
+    unoptimized: true,
   },
+  allowedDevOrigins: ["*.jam-bot.com"],
+  pageExtensions: ["ts", "tsx", "js", "jsx", "md", "mdx"],
 };
 
-export default nextConfig;
+const withMDX = createMDX({});
+
+export default withMDX(nextConfig);

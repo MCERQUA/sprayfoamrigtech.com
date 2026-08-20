@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Why Rig Quality Matters - SprayFoamRigTech</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&amp;family=Oswald:wght@600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "on-secondary": "#ffffff",
+                    "error-container": "#ffdad6",
+                    "tertiary": "#44623b",
+                    "surface-container-lowest": "#ffffff",
+                    "secondary-fixed": "#ffe08a",
+                    "background": "#fff8f3",
+                    "on-secondary-fixed-variant": "#574400",
+                    "inverse-primary": "#ffb691",
+                    "on-primary-fixed": "#341100",
+                    "inverse-surface": "#353027",
+                    "surface-tint": "#9b450a",
+                    "surface-container-highest": "#ece1d4",
+                    "tertiary-fixed": "#c9edbb",
+                    "on-error-container": "#93000a",
+                    "on-primary": "#ffffff",
+                    "secondary-container": "#fdda76",
+                    "on-surface-variant": "#56433a",
+                    "on-tertiary-container": "#edffe2",
+                    "tertiary-fixed-dim": "#add0a0",
+                    "secondary-fixed-dim": "#e5c362",
+                    "primary-fixed": "#ffdbcb",
+                    "on-surface": "#201b13",
+                    "on-background": "#201b13",
+                    "outline-variant": "#dcc1b5",
+                    "on-tertiary-fixed-variant": "#314e29",
+                    "surface-container-low": "#fdf2e5",
+                    "on-tertiary-fixed": "#052103",
+                    "on-primary-fixed-variant": "#783100",
+                    "surface-container-high": "#f1e7d9",
+                    "primary-container": "#b5581f",
+                    "surface-variant": "#ece1d4",
+                    "surface-dim": "#e3d8cc",
+                    "on-error": "#ffffff",
+                    "secondary": "#745b00",
+                    "on-secondary-fixed": "#241a00",
+                    "inverse-on-surface": "#faefe2",
+                    "primary-fixed-dim": "#ffb691",
+                    "surface-container": "#f7ecdf",
+                    "surface": "#fff8f3",
+                    "tertiary-container": "#5b7b52",
+                    "outline": "#897268",
+                    "on-primary-container": "#fff7f5",
+                    "primary": "#954105",
+                    "surface-bright": "#fff8f3",
+                    "on-secondary-container": "#775e00",
+                    "on-tertiary": "#ffffff",
+                    "error": "#ba1a1a"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.125rem",
+                    "lg": "0.25rem",
+                    "xl": "0.5rem",
+                    "full": "0.75rem"
+            },
+            "spacing": {
+                    "max-width": "1280px",
+                    "unit": "8px",
+                    "gutter": "24px",
+                    "margin-mobile": "16px",
+                    "margin-desktop": "64px"
+            },
+            "fontFamily": {
+                    "body-md": ["Inter"],
+                    "headline-lg": ["Oswald"],
+                    "display-lg": ["Oswald"],
+                    "headline-lg-mobile": ["Oswald"],
+                    "body-lg": ["Inter"],
+                    "body-sm": ["Inter"],
+                    "headline-sm": ["Oswald"],
+                    "headline-md": ["Oswald"],
+                    "label-md": ["Inter"]
+            },
+            "fontSize": {
+                    "body-md": ["16px", {"lineHeight": "24px", "fontWeight": "400"}],
+                    "headline-lg": ["40px", {"lineHeight": "48px", "letterSpacing": "0.01em", "fontWeight": "700"}],
+                    "display-lg": ["64px", {"lineHeight": "72px", "letterSpacing": "0.02em", "fontWeight": "700"}],
+                    "headline-lg-mobile": ["32px", {"lineHeight": "36px", "fontWeight": "700"}],
+                    "body-lg": ["18px", {"lineHeight": "28px", "fontWeight": "400"}],
+                    "body-sm": ["14px", {"lineHeight": "20px", "fontWeight": "400"}],
+                    "headline-sm": ["18px", {"lineHeight": "24px", "letterSpacing": "0.05em", "fontWeight": "600"}],
+                    "headline-md": ["24px", {"lineHeight": "32px", "letterSpacing": "0.01em", "fontWeight": "600"}],
+                    "label-md": ["12px", {"lineHeight": "16px", "letterSpacing": "0.08em", "fontWeight": "600"}]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .industrial-border { border: 1px solid rgba(36, 31, 23, 0.15); }
+        .industrial-shadow { box-shadow: 4px 4px 0px 0px rgba(33,28,21,1); }
+        .coiled-hose-bg { background-image: repeating-linear-gradient(45deg, transparent, transparent 10px, rgba(36,31,23,0.05) 10px, rgba(36,31,23,0.05) 11px); }
+        .coiled-hose-border { border-bottom: 2px dashed rgba(36,31,23,0.15); }
+    </style>
+</head>
+<body class="bg-surface text-on-surface font-body-md antialiased overflow-x-hidden pt-20">
+<!-- TopAppBar -->
+<nav class="bg-surface-bright dark:bg-inverse-surface fixed top-0 w-full z-50 border-b border-outline/15 dark:border-outline-variant/15 shadow-[4px_4px_0px_0px_rgba(33,28,21,1)]">
+<div class="flex justify-between items-center h-20 px-gutter max-w-max-width mx-auto">
+<div class="font-headline-md text-headline-md font-bold text-primary dark:text-primary-fixed-dim tracking-tighter uppercase">
+                SprayFoamRigTech
+            </div>
+<div class="hidden md:flex items-center space-x-8 font-headline-sm text-headline-sm">
+<a class="text-on-surface-variant dark:text-surface-variant font-medium hover:text-primary dark:hover:text-primary-fixed-dim transition-colors duration-200" href="#">Systems</a>
+<a class="text-on-surface-variant dark:text-surface-variant font-medium hover:text-primary dark:hover:text-primary-fixed-dim transition-colors duration-200" href="#">Components</a>
+<a class="text-primary dark:text-primary-fixed-dim border-b-2 border-primary font-bold pb-1" href="#">Manuals</a>
+<a class="text-on-surface-variant dark:text-surface-variant font-medium hover:text-primary dark:hover:text-primary-fixed-dim transition-colors duration-200" href="#">Support</a>
+</div>
+<div class="flex items-center space-x-4">
+<button class="bg-primary-container text-on-primary-container font-headline-sm text-headline-sm px-6 py-2 rounded shadow-[2px_2px_0px_0px_rgba(33,28,21,1)] hover:bg-[#8A4318] transition-colors active:translate-y-0.5 transition-transform">
+                    Request Quote
+                </button>
+</div>
+</div>
+</nav>
+<main>
+<!-- 1. HERO -->
+<section class="relative min-h-[70vh] flex items-center justify-center bg-inverse-surface border-b border-outline/20">
+<div class="absolute inset-0 z-0">
+<div class="absolute inset-0 bg-gradient-to-r from-inverse-surface via-inverse-surface/80 to-transparent z-10"></div>
+<div class="absolute inset-0 bg-[#B5581F]/20 mix-blend-multiply z-10"></div>
+<img class="w-full h-full object-cover filter brightness-75 contrast-125 grayscale-[20%]" data-alt="A rugged, highly detailed close-up of an industrial spray foam rig control panel. The scene is illuminated by a warm, harsh tungsten work-light, casting deep shadows over pressure gauges, coiled hoses, and heavy-duty brass valves. A worker's gloved hand holds a diagnostic tool. Premium industrial editorial style, high contrast, warm rust and charcoal tones." src="https://www.gstatic.com/labs-code/stitch/stitch-placeholder-300x300.svg"/>
+</div>
+<div class="relative z-20 max-w-max-width mx-auto px-gutter w-full grid grid-cols-12 gap-gutter">
+<div class="col-span-12 md:col-span-8 lg:col-span-6 space-y-6">
+<div class="font-label-md text-label-md text-primary-fixed uppercase tracking-widest flex items-center gap-2">
+<span>Home</span>
+<span class="material-symbols-outlined text-sm">chevron_right</span>
+<span class="text-surface-bright border-b border-primary-fixed">Why Rig Quality Matters</span>
+</div>
+<h1 class="font-display-lg text-display-lg text-surface-bright uppercase">The Machine Behind the Magic</h1>
+<p class="font-body-lg text-body-lg text-surface-container-high border-l-4 border-primary-container pl-4">
+                        Why Equipment Quality is the Silent Partner in Every Perfect Foam Job.
+                    </p>
+</div>
+</div>
+</section>
+<!-- 2. THE CONNECTION -->
+<section class="py-margin-desktop px-gutter bg-surface-container-low border-b border-outline/15 coiled-hose-bg">
+<div class="max-w-max-width mx-auto">
+<div class="grid grid-cols-1 md:grid-cols-12 gap-gutter">
+<div class="col-span-12 md:col-span-4 border-r border-outline/15 pr-gutter">
+<div class="sticky top-24">
+<h2 class="font-headline-lg text-headline-lg text-on-surface uppercase mb-4">The Science of Consistency</h2>
+<p class="font-body-md text-body-md text-on-surface-variant">
+                                Spray foam isn't just a material; it's a chemical reaction engineered on-site. The rig dictates the precision of that reaction.
+                            </p>
+</div>
+</div>
+<div class="col-span-12 md:col-span-8 grid grid-cols-1 sm:grid-cols-2 gap-gutter">
+<!-- Dial Card 1 -->
+<div class="bg-surface p-6 industrial-border industrial-shadow relative overflow-hidden group">
+<div class="absolute top-4 right-4 w-12 h-12 rounded-full border-2 border-outline/30 flex items-center justify-center">
+<span class="material-symbols-outlined text-primary text-2xl" style="font-variation-settings: 'FILL' 1;">speed</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-on-surface uppercase mb-2">Pressure Control</h3>
+<div class="w-16 h-1 bg-outline/20 mb-4"></div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+                                Exacting 1:1 ratio mixing requires perfectly balanced pressure. Fluctuation leads to off-ratio foam, compromising structural integrity.
+                            </p>
+</div>
+<!-- Dial Card 2 -->
+<div class="bg-surface p-6 industrial-border industrial-shadow relative overflow-hidden group">
+<div class="absolute top-4 right-4 w-12 h-12 rounded-full border-2 border-outline/30 flex items-center justify-center">
+<span class="material-symbols-outlined text-primary text-2xl" style="font-variation-settings: 'FILL' 1;">thermostat</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-on-surface uppercase mb-2">Thermal Baseline</h3>
+<div class="w-16 h-1 bg-outline/20 mb-4"></div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+                                Heated hoses must maintain precise temperatures to ensure proper viscosity. Cold chemicals result in poor yield and adhesion failures.
+                            </p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- 3. WHAT GOOD LOOKS LIKE -->
+<section class="py-margin-desktop px-gutter bg-surface-container-high border-b border-outline/15">
+<div class="max-w-max-width mx-auto">
+<header class="mb-12 text-center md:text-left">
+<h2 class="font-headline-lg text-headline-lg text-on-surface uppercase">What Good Looks Like</h2>
+<p class="font-body-md text-body-md text-on-surface-variant mt-2 max-w-2xl">A perfectly dialed-in rig produces unmistakable results.</p>
+</header>
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-gutter">
+<!-- Check Card -->
+<div class="bg-surface p-6 industrial-border border-t-4 border-t-tertiary">
+<div class="w-8 h-8 rounded border border-outline flex items-center justify-center bg-tertiary text-on-tertiary mb-4">
+<span class="material-symbols-outlined text-lg">check</span>
+</div>
+<h4 class="font-headline-sm text-headline-sm text-on-surface uppercase mb-2">Consistent Cell Structure</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Uniform bubbles indicate perfect chemical expansion.</p>
+</div>
+<!-- Check Card -->
+<div class="bg-surface p-6 industrial-border border-t-4 border-t-tertiary">
+<div class="w-8 h-8 rounded border border-outline flex items-center justify-center bg-tertiary text-on-tertiary mb-4">
+<span class="material-symbols-outlined text-lg">check</span>
+</div>
+<h4 class="font-headline-sm text-headline-sm text-on-surface uppercase mb-2">Proper Adhesion</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Foam grips securely to substrates without peeling or shrinking.</p>
+</div>
+<!-- Check Card -->
+<div class="bg-surface p-6 industrial-border border-t-4 border-t-tertiary">
+<div class="w-8 h-8 rounded border border-outline flex items-center justify-center bg-tertiary text-on-tertiary mb-4">
+<span class="material-symbols-outlined text-lg">check</span>
+</div>
+<h4 class="font-headline-sm text-headline-sm text-on-surface uppercase mb-2">No Off-Gassing Smell</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">A cured product should be inert and virtually odorless.</p>
+</div>
+<!-- Check Card -->
+<div class="bg-surface p-6 industrial-border border-t-4 border-t-tertiary">
+<div class="w-8 h-8 rounded border border-outline flex items-center justify-center bg-tertiary text-on-tertiary mb-4">
+<span class="material-symbols-outlined text-lg">check</span>
+</div>
+<h4 class="font-headline-sm text-headline-sm text-on-surface uppercase mb-2">Uniform Coverage</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Even application thickness without excessive rippling.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- 4. WHAT TO ASK -->
+<section class="py-margin-desktop px-gutter bg-inverse-surface text-surface-bright">
+<div class="max-w-max-width mx-auto">
+<div class="grid grid-cols-1 md:grid-cols-12 gap-gutter items-start">
+<div class="col-span-12 md:col-span-5 md:sticky md:top-24">
+<h2 class="font-display-lg text-display-lg uppercase mb-4 text-primary-fixed">The Informed Homeowner</h2>
+<p class="font-body-lg text-body-lg text-surface-container-high border-l-4 border-primary-fixed pl-4">
+                            Protect your investment by asking the right technical questions before the job starts.
+                        </p>
+</div>
+<div class="col-span-12 md:col-span-7 space-y-6">
+<div class="p-6 bg-surface-container-lowest/5 border border-outline-variant/20 rounded">
+<div class="flex items-start gap-4">
+<span class="material-symbols-outlined text-primary-fixed mt-1">assignment</span>
+<div>
+<h4 class="font-headline-md text-headline-md uppercase text-surface-bright">Maintenance Records</h4>
+<p class="font-body-md text-body-md text-surface-container-high mt-1">"When was this proportioner last serviced?" Look for regular, documented maintenance.</p>
+</div>
+</div>
+</div>
+<div class="p-6 bg-surface-container-lowest/5 border border-outline-variant/20 rounded">
+<div class="flex items-start gap-4">
+<span class="material-symbols-outlined text-primary-fixed mt-1">tune</span>
+<div>
+<h4 class="font-headline-md text-headline-md uppercase text-surface-bright">Calibration Checks</h4>
+<p class="font-body-md text-body-md text-surface-container-high mt-1">"How do you verify ratio on site?" They should describe catching and weighing material samples.</p>
+</div>
+</div>
+</div>
+<div class="p-6 bg-surface-container-lowest/5 border border-outline-variant/20 rounded">
+<div class="flex items-start gap-4">
+<span class="material-symbols-outlined text-primary-fixed mt-1">history</span>
+<div>
+<h4 class="font-headline-md text-headline-md uppercase text-surface-bright">Pressure Logs</h4>
+<p class="font-body-md text-body-md text-surface-container-high mt-1">"Do you record spray pressures during the job?" Modern rigs can digitally track this.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-inverse-surface dark:bg-surface-container-lowest w-full pt-margin-desktop pb-margin-mobile border-t border-outline/20">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-gutter px-gutter max-w-max-width mx-auto">
+<div class="col-span-1 md:col-span-1">
+<div class="font-headline-sm text-headline-sm text-surface-bright mb-4">SprayFoamRigTech</div>
+<p class="font-body-sm text-body-sm text-surface-variant/70">
+                    © 2024 SprayFoamRigTech. Industrial Precision Engineering.
+                </p>
+</div>
+<div class="col-span-1 md:col-span-3 flex flex-wrap gap-6 md:justify-end items-start font-body-sm text-body-sm">
+<a class="text-surface-variant/70 hover:text-surface-bright hover:text-primary-fixed transition-colors cursor-pointer" href="#">Technical Specs</a>
+<a class="text-surface-variant/70 hover:text-surface-bright hover:text-primary-fixed transition-colors cursor-pointer" href="#">Safety Protocols</a>
+<a class="text-surface-variant/70 hover:text-surface-bright hover:text-primary-fixed transition-colors cursor-pointer" href="#">Parts Catalog</a>
+<a class="text-surface-variant/70 hover:text-surface-bright hover:text-primary-fixed transition-colors cursor-pointer" href="#">Privacy Policy</a>
+<a class="text-surface-variant/70 hover:text-surface-bright hover:text-primary-fixed transition-colors cursor-pointer" href="#">Terms of Service</a>
+</div>
+</div>
+</footer>
+</body></html>

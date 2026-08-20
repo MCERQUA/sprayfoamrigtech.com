@@ -2,9 +2,7 @@ import type { Config } from "tailwindcss";
 
 const config: Config = {
   darkMode: "class",
-  content: [
-    "./src/**/*.{ts,tsx,mdx}",
-  ],
+  content: ["./src/**/*.{ts,tsx,mdx}"],
   theme: {
     extend: {
       colors: {
@@ -15,6 +13,7 @@ const config: Config = {
         foreground: "hsl(var(--foreground))",
         primary: {
           DEFAULT: "hsl(var(--primary))",
+          dark: "hsl(var(--primary-dark))",
           foreground: "hsl(var(--primary-foreground))",
         },
         secondary: {
@@ -23,6 +22,7 @@ const config: Config = {
         },
         accent: {
           DEFAULT: "hsl(var(--accent))",
+          dark: "hsl(var(--accent-dark))",
           foreground: "hsl(var(--accent-foreground))",
         },
         muted: {
@@ -36,6 +36,15 @@ const config: Config = {
         destructive: {
           DEFAULT: "hsl(var(--destructive))",
           foreground: "hsl(var(--destructive-foreground))",
+        },
+        pine: {
+          DEFAULT: "hsl(var(--pine))",
+          dark: "hsl(var(--pine-dark))",
+          foreground: "hsl(var(--pine-foreground))",
+        },
+        charcoal: {
+          DEFAULT: "hsl(var(--charcoal))",
+          foreground: "hsl(var(--charcoal-foreground))",
         },
       },
       fontFamily: {
@@ -52,13 +61,18 @@ const config: Config = {
           from: { transform: "translateX(0)" },
           to: { transform: "translateX(-50%)" },
         },
+        "draw-check": {
+          from: { strokeDashoffset: "24" },
+          to: { strokeDashoffset: "0" },
+        },
       },
       animation: {
         marquee: "marquee var(--marquee-speed, 30s) linear infinite",
+        "draw-check": "draw-check 0.5s ease-out forwards",
       },
     },
   },
-  plugins: [],
+  plugins: [require("@tailwindcss/typography")],
 };
 
 export default config;
