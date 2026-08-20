@@ -1,0 +1,66 @@
+SPRAYFOAMRIGTECH.COM — BUILD STATUS
+Built: 2026-08-20
+Operator: Contractors Choice Agency
+Worker: josh-desk-4@mesh (worker-c)
+
+DOMAIN EXPIRATION NOTE
+-----------------------
+domains.db shows expires 2026-08-26 (close — 6 days out at build time) but auto_renew=1 and
+locked=1, per dispatch instructions. Not a build blocker, flagged here so it's on record for
+host to monitor.
+
+REAL-BUSINESS-NAME CHECK
+--------------------------
+Cleared without escalation (unlike venardsprayfoam.com and sprayfoam3d.com earlier tonight).
+"Spray Foam Rig Tech Support" is a generic service-page title used by IDI Distributors (a real,
+established wholesale spray foam distributor) — not IDI's brand name, and IDI's actual company
+name bears no domain-name proximity to sprayfoamrigtech.com. No dedicated business, no Facebook
+page, no name-convention collision found. Full check in
+ai/research/01-business-profile/profile.md.
+
+ANGLE
+-----
+CCA educational resource on spray foam rig equipment: the proportioner, spray gun, heated
+hoses, and generator, plus maintenance, troubleshooting, and why equipment quality matters for
+job outcomes. Corrected buzzword test applied and passed easily — this is mundane, bought
+equipment/service content with real, substantial competitor material from established companies
+(IDI Distributors, Service Partners, AMD Distribution, Graco, Accufoam, Profoam, SprayWorks
+Equipment). Kept deliberately mechanical and plain-spoken throughout — no tech-hype framing
+despite the domain name.
+
+BUILD SUMMARY
+-------------
+ROUTES: 11 top-level pages + 4 seeded blog posts = 15 pages, 19 generated static routes
+  (Home, What Is a Spray Foam Rig?, Rig Maintenance & Troubleshooting, Why Rig Quality Matters,
+   Get Matched, About, Contact, Blog index + 4 posts, Privacy, Terms, sitemap.xml, robots.txt,
+   404)
+
+HOMEPAGE: 9 sections (hero, definition band, equipment grid, why-it-matters, common-rig-issues,
+  how-matching-works, FAQ, final CTA, footer)
+
+IMAGES: 8 real AI-generated (Gemini) images, 1.1MB total. RGB-scanned by the image fork before
+  finalizing — all confirmed warm-leaning, no blue-cast issues.
+
+STITCH COVERAGE: 3 real Stitch-generated screens (home, rig maintenance and troubleshooting, why
+  rig quality matters) — verified via ls .stitch-pages/*.html. Note: create_project's first call
+  errored on an em-dash in the title string, succeeded immediately on retry with a plain hyphen
+  — worth remembering for future builds.
+
+PALETTE: warm earth tones only — rust-orange #B5581F / khaki-gold #BFA043 / pine-green #3E5C36
+  (trust accent) / charcoal-dark #211C15 / parchment #F5F0E6. Zero purple/pink/blue/neon.
+  Deliberately DISTINCT from all 4 other fleet builds tonight — condensed industrial Oswald
+  headline type is a new pairing not used elsewhere this batch.
+
+FORK DISCIPLINE: 3rd consecutive build tonight with explicit HARD SCOPE BOUNDARY forks (no
+  pnpm/next/git commands, confined to specific directories). Zero concurrency incidents — both
+  forks (research, explainer-pages) complied per their completion reports.
+
+BUILD: pnpm run build GREEN, clean on first attempt. Static export, next 15.3.9, react 19.2.0,
+  pnpm-lock.yaml only. Branch: main.
+
+PNPM-WORKSPACE.YAML: correct from initial scaffold (packages: ["."], not packages: []).
+
+GATE: pre-deploy-content-check.sh → PASS (exit 0) on first run, re-verified at final commit.
+
+NOT DONE (per instructions): no push to GitHub (MCERQUA/sprayfoamrigtech.com), no Netlify
+deploy — build + commit only, reporting to manager for host hand-off.
