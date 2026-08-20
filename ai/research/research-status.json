@@ -1,0 +1,16 @@
+{
+  "project": "sprayfoamrigtech.com",
+  "client": "josh",
+  "created": "2026-08-20",
+  "phases": {
+    "business-profile": { "status": "complete", "files": 1 },
+    "keyword-research": { "status": "complete", "files": 4 },
+    "competitor-analysis": { "status": "complete", "files": 8 },
+    "content-strategy": { "status": "complete", "files": 7 },
+    "topical-map": { "status": "complete", "files": 3 },
+    "local-seo": { "status": "not_applicable", "files": 0 },
+    "conversion-patterns": { "status": "complete", "files": 4 },
+    "design-plan": { "status": "not_started", "files": 0 },
+    "content-writing": { "status": "not_started", "files": 0 }
+  }
+}
