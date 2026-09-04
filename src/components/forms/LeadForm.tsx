@@ -18,6 +18,8 @@ function encode(data: Record<string, string>) {
     .join("&");
 }
 
+const STATE_OPTIONS: [string, string][] = [["AL", "Alabama"], ["AK", "Alaska"], ["AZ", "Arizona"], ["AR", "Arkansas"], ["CA", "California"], ["CO", "Colorado"], ["CT", "Connecticut"], ["DE", "Delaware"], ["DC", "District of Columbia"], ["FL", "Florida"], ["GA", "Georgia"], ["HI", "Hawaii"], ["ID", "Idaho"], ["IL", "Illinois"], ["IN", "Indiana"], ["IA", "Iowa"], ["KS", "Kansas"], ["KY", "Kentucky"], ["LA", "Louisiana"], ["ME", "Maine"], ["MD", "Maryland"], ["MA", "Massachusetts"], ["MI", "Michigan"], ["MN", "Minnesota"], ["MS", "Mississippi"], ["MO", "Missouri"], ["MT", "Montana"], ["NE", "Nebraska"], ["NV", "Nevada"], ["NH", "New Hampshire"], ["NJ", "New Jersey"], ["NM", "New Mexico"], ["NY", "New York"], ["NC", "North Carolina"], ["ND", "North Dakota"], ["OH", "Ohio"], ["OK", "Oklahoma"], ["OR", "Oregon"], ["PA", "Pennsylvania"], ["RI", "Rhode Island"], ["SC", "South Carolina"], ["SD", "South Dakota"], ["TN", "Tennessee"], ["TX", "Texas"], ["UT", "Utah"], ["VT", "Vermont"], ["VA", "Virginia"], ["WA", "Washington"], ["WV", "West Virginia"], ["WI", "Wisconsin"], ["WY", "Wyoming"]];
+
 export function LeadForm({ className }: { className?: string }) {
   const [status, setStatus] = useState<"idle" | "submitting" | "done" | "error">("idle");
 
@@ -91,6 +93,68 @@ export function LeadForm({ className }: { className?: string }) {
             required
             className="w-full rounded-md border border-border bg-card px-4 py-3 text-sm text-foreground placeholder:text-muted-foreground focus:border-primary focus:outline-none focus:ring-2 focus:ring-primary/20"
             placeholder="Jordan Homeowner"
+          />
+        </div>
+
+        <div className="sm:col-span-2">
+          <label htmlFor="street" className="mb-1.5 block text-sm font-medium text-foreground">
+            Job / Property Address
+          </label>
+          <input
+            id="street"
+            name="street"
+            type="text"
+            required
+            className="w-full rounded-md border border-border bg-card px-4 py-3 text-sm text-foreground placeholder:text-muted-foreground focus:border-primary focus:outline-none focus:ring-2 focus:ring-primary/20"
+            placeholder="Street address"
+          />
+        </div>
+
+        <div>
+          <label htmlFor="city" className="mb-1.5 block text-sm font-medium text-foreground">
+            City
+          </label>
+          <input
+            id="city"
+            name="city"
+            type="text"
+            required
+            className="w-full rounded-md border border-border bg-card px-4 py-3 text-sm text-foreground placeholder:text-muted-foreground focus:border-primary focus:outline-none focus:ring-2 focus:ring-primary/20"
+            placeholder="City"
+          />
+        </div>
+
+        <div>
+          <label htmlFor="state" className="mb-1.5 block text-sm font-medium text-foreground">
+            State
+          </label>
+          <select
+            id="state"
+            name="state"
+            required
+            defaultValue=""
+            className="w-full rounded-md border border-border bg-card px-4 py-3 text-sm text-foreground focus:border-primary focus:outline-none focus:ring-2 focus:ring-primary/20"
+          >
+            <option value="" disabled>Select</option>
+            {STATE_OPTIONS.map(([value, label]) => (
+              <option key={value} value={value}>{label}</option>
+            ))}
+          </select>
+        </div>
+
+        <div>
+          <label htmlFor="zip" className="mb-1.5 block text-sm font-medium text-foreground">
+            ZIP
+          </label>
+          <input
+            id="zip"
+            name="zip"
+            type="text"
+            inputMode="numeric"
+            pattern="[0-9]{5}(-[0-9]{4})?"
+            required
+            className="w-full rounded-md border border-border bg-card px-4 py-3 text-sm text-foreground placeholder:text-muted-foreground focus:border-primary focus:outline-none focus:ring-2 focus:ring-primary/20"
+            placeholder="85001"
           />
         </div>
 
